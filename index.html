@@ -1,137 +1,93 @@
-    <html lang="en">
-
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HiCar - Solution Car Rental our family</title>
-
-        <!-- 
-        - favicon
-        -->
-        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-        <!-- 
-        - custom css link
-        -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-
-        <!-- 
-        - google font link
-        -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
-        rel="stylesheet">
+        <title>HiCar - Solution Car Rental</title>
+        <link rel="shortcut icon" href="/assets/images/speedometer.png">
+        <link rel="stylesheet" href="/assets/css/style.css">
     </head>
-
-        <!-- 
-        - #HEADER
-        -->
     <body>
         <header class="header" data-header>
             <div class="container">
                 <div class="overlay" data-overlay></div>
                 <a href="#" class="logo">
-                    <img src="./assets/images/logo.svg" alt="Ridex logo">
+                    <h1>HiCar</h1>
                 </a>
 
                 <nav class="navbar" data-navbar>
-                <ul class="navbar-list">
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                        </li>
+                        <li>
+                            <a href="explore.html" class="navbar-link" data-nav-link>Explore</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-link" data-nav-link>About us</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                        </li>
+                    </ul>
+                </nav>
 
-                <li>
-                    <a href="#home" class="navbar-link" data-nav-link>Home</a>
-                </li>
+                <div class="header-actions">
+                    <div class="header-contact">
+                        <a href="https://wa.me/082156226440" class="contact-link">082156226440</a>
+                        <span class="contact-time">Senin - Jumat : 7:00 - 21:00 </span>
+                    </div>
 
-                <li>
-                <a href="#featured-car" class="navbar-link" data-nav-link>Explore cars</a>
-                </li>
-
-                <li>
-                    <a href="#" class="navbar-link" data-nav-link>About us</a>
-                </li>
-
-                <li>
-                    <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-                </li>
-
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-
-                <div class="header-contact">
-                <a href="tel:88002345678" class="contact-link">082156226440</a>
-
-                <span class="contact-time">Mon - Sat: 7:00 am - :00 pm</span>
+                    <a href="explore.html" class="btn" aria-labelledby="aria-label-txt">
+                        <ion-icon name="car-outline"></ion-icon>
+                        <span id="aria-label-txt">Explore cars</span>
+                    </a>
+                    <a href="#home" class="btn user-btn" aria-label="Profile">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                    
+                    <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                    </button>
                 </div>
-
-                <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
-                <ion-icon name="car-outline"></ion-icon>
-
-                <span id="aria-label-txt">Explore cars</span>
-                </a>
-
-                <a href="https://wa.me/082156226440" class="btn user-btn" aria-label="Profile">
-                <ion-icon name="person-outline"></ion-icon>
-                </a>
-
-                <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-                </button>
-
-            </div>
-
             </div>
         </header>
 
         <main>
             <article>
-        
-              <!-- 
-                - #HERO
-              -->
-        
-              <section class="section hero" id="home">
-                <div class="container">
-        
-                  <div class="hero-content">
-                    <h2 class="h1 hero-title">The easy way to takeover a lease</h2>
-        
-                    <p class="hero-text">
-                      Live in New York, New Jerset and Connecticut!
-                    </p>
-                  </div>
-        
-                  <div class="hero-banner"></div>
-        
-                  <form action="" class="hero-form">
-        
-                    <div class="input-wrapper">
-                      <label for="input-1" class="input-label">Car, model, or brand</label>
-        
-                      <input type="text" name="car-model" id="input-1" class="input-field"
-                        placeholder="What car are you looking?">
+                <section class="section hero" id="home">
+                    <div class="container">
+                        <div class="hero-content">
+                            <h2 class="h1 hero-title">Sebuah solusi perjalanan Anda!</h2>
+                            <p class="hero-text">Pilihan tepat, Rental Mobil dengan Pelayanan Berkualitas!</p>
                     </div>
-        
-                    <div class="input-wrapper">
-                      <label for="input-2" class="input-label">Max. monthly payment</label>
-        
-                      <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Add an amount in $">
+
+                    <div class="hero-banner" ></div>
+                    
+                    <form action="" class="hero-form">
+                        <div class="input-wrapper">
+                            <label for="input-1" class="input-label">Tentukan Mobilmu!</label>
+                            <input type="text" name="car-model" id="input-1" class="input-field" placeholder="Mau mobil apa?">
+                        </div>
+            
+                        <div class="input-wrapper">
+                            <label for="input-2" class="input-label">Sesuaikan budgetmu!</label>
+                            <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Cari harga berapa?">
+                        </div>
+            
+                        <div class="input-wrapper">
+                            <label for="input-3" class="input-label">Waktu penggunaan!</label>
+                            <input type="text" name="year" id="input-3" class="input-field" placeholder="Sewa berapa lama?">
+                        </div>            
+                        <button type="submit" class="btn">Search</button>           
+                    </form>            
                     </div>
-        
-                    <div class="input-wrapper">
-                      <label for="input-3" class="input-label">Make Year</label>
-        
-                      <input type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year">
-                    </div>
-        
-                    <button type="submit" class="btn">Search</button>
-        
-                  </form>
-        
-                </div>
-              </section>
-        </html>
+                </section>
+            </article>
+        </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
