@@ -93,6 +93,13 @@ a {
   background-position: center;
 }
 
+.back ion-icon{
+  font-size: 50px;
+  --ionicon-stroke-width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
 .login {
   grid-area: login;
   display: flex;
