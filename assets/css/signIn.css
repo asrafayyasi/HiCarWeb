@@ -156,7 +156,6 @@ a {
   height: 13px;
 }
 
-
 /* form a {
   align-self: flex-end;
 } */
@@ -196,7 +195,7 @@ a {
   label {
     color: white;
   }
-  .signin{
+  .signin {
     margin-bottom: 4rem;
   }
   .signin a {
@@ -208,5 +207,4 @@ a {
     position: relative;
     font-size: 1.5rem;
   }
-
 }
