@@ -4,29 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LoginPage</title>
-    <link rel="stylesheet" href="./assets/css/login.css" />
-    <link rel="shortcut icon" href="/assets/images/speedometer.png" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../assets/css/login.css" />
+    <link rel="shortcut icon" href="../assets/images/car-sport.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-    <script defer src="./assets/js/validasi_login.js"></script>
+    <script defer src="../assets/js/validasi_login.js"></script>
+  </head>
   </head>
   <body>
     <div class="container">
-      <div class="jumbopict"></div>
+      <div class="jumbopict"><img src="/assets/images/login-admin2.gif"  style="margin-left: 100px; margin-top: 60px;"></div>
       <div class="login">
         <div class="signin">
-          <a href="index.html" class="back" aria-label="Profile">
+          <a href="/dashboard/form.html" class="back" aria-label="Profile">
             <ion-icon name="arrow-undo-circle-outline"></ion-icon>
           </a>
-          <h1>Sign in</h1>
+          <h1>Log In</h1> 
         </div>
         <div class="continuewith">
           <a href="" class="google choose">
-            <img src="assets/images/google.png" alt="" />
+            <img src="/assets/images/google.png" alt="" />
             <p>Continue With Google</p>
           </a>
           <a href="" class="twitter choose">
-            <img src="assets/images/twitter.png" alt="" />
+            <img src="/assets/images/twitter.png" alt="" />
             <p>Continue With Twitter</p>
           </a>
         </div>
@@ -35,7 +36,8 @@
           <p>OR</p>
           <div class="line"></div>
         </div>
-        <div class="form" id="form">
+
+        <div class="forms">
           <form action="/" id="form">
             <div class="input-control">
               <label for="username">Username</label>
@@ -46,17 +48,26 @@
               <label for="password">Your password</label>
               <input type="Password" name="password" id="password" />
               <div class="error"></div>
-              <a href="" class="forget">Forget Your Password</a>
-            </div>
+            </div>           
 
-            <div class="button">
-              <button type="submit" class="btn-submit">Sign In</button>
-              <p>Don't have an account? <a href="signUp.html">Sign Up</a></p>
-            </div>
+                  <div class="termsOfUse">
+                <a href="">Forget Your Password</a>
+              </p>
+            <button type="submit" class="btn-submit">
+              <a href="/dashboard/dashboard.html" 
+              style="color: white;
+              font-size: 20px;
+              letter-spacing: 2px;
+              text-decoration: none;
+              font-weight: bold;">
+                Login
+              </a>
+            </button>
           </form>
         </div>
       </div>
     </div>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>

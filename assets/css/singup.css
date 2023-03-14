@@ -16,8 +16,6 @@ a {
 
 .jumbopict {
   height: 100vh;
-  grid-area: jumbopict;
-  background-image: url('../images/carrrrrr.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -123,7 +121,7 @@ form a {
 
 @media screen and (width <= 678px) {
   .container {
-    background-image: url('../images/jumbo5.jpg');
+    background-image: url('../images/login-admin.gif');
     background-position: center;
     background-size: cover;
     grid-template-columns: 1fr;
