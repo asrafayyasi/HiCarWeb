@@ -1,72 +1,3 @@
-:root {
-  --pale-purple-pantone: hsl(262, 63%, 92%);
-  --medium-sea-green: hsl(152, 63%, 43%);
-  --lavender-blush: hsl(336, 35%, 92%);
-  --carolina-blue: hsl(204, 91%, 53%);
-  --columbia-blue: hsl(204, 92%, 90%);
-  --alice-blue-1: hsl(216, 38%, 95%);
-  --alice-blue-2: hsl(216, 75%, 97%);
-  --alice-blue-3: hsl(216, 38%, 95%);
-  --alice-blue-4: hsl(217, 33%, 92%);
-  --independence: hsl(219, 21%, 39%);
-  --deep-cerise: hsl(329, 63%, 52%);
-  --eerie-black: hsl(210, 11%, 15%);
-  --space-cadet: hsl(240, 22%, 25%);
-  --blue-jeans: hsl(204, 80%, 63%);
-  --slate-blue: hsl(262, 60%, 57%);
-  --beau-blue: hsl(208, 86%, 92%);
-  --honey-dew: hsl(152, 48%, 89%);
-  --mimi-pink: hsl(329, 63%, 90%);
-  --red-salsa: hsl(0, 79%, 63%);
-  --sapphire: hsl(211, 100%, 35%);
-  --manatee: hsl(219, 14%, 60%);
-  --white: hsl(0, 0%, 100%);
-
-  --gradient: linear-gradient(to top, var(--alice-blue-2), var(--alice-blue-3));
-
-  --ff-nunito: 'Nunito', sans-serif;
-  --ff-open-sans: 'Open Sans', sans-serif;
-
-  --fs-1: 2.125rem;
-  --fs-2: 1.875rem;
-  --fs-3: 1.5rem;
-  --fs-4: 1.375rem;
-  --fs-5: 1.125rem;
-  --fs-6: 0.875rem;
-  --fs-7: 0.625rem;
-
-  --fw-400: 400;
-  --fw-600: 600;
-
-  /**
-   * transition
-   */
-
-  --transition: 0.5s ease;
-
-  /**
-   * spacing
-   */
-
-  --section-padding: 50px;
-
-  /**
-   * radius
-   */
-
-  --radius-10: 10px;
-  --radius-14: 14px;
-  --radius-18: 18px;
-
-  /**
-   * shadow
-   */
-
-  --shadow-1: 3px 3px 9px hsla(240, 14%, 69%, 0.2);
-  --shadow-2: 3px 3px 9px hsla(204, 92%, 59%, 0.3);
-
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -92,7 +23,7 @@ a {
   background-position: center;
 }
 
-.back ion-icon{
+.back ion-icon {
   font-size: 50px;
   --ionicon-stroke-width: 40px;
   margin: 0;
@@ -109,6 +40,7 @@ a {
 .signin {
   width: 70%;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .login h1 {
@@ -117,7 +49,7 @@ a {
   position: relative;
 }
 
-.form {
+.forms {
   width: 70%;
   margin-top: -5rem;
   color: rgb(169, 166, 166);
@@ -130,17 +62,56 @@ form {
   position: relative;
 }
 
-label {
-  align-self: flex-start;
-  color: rgb(169, 166, 166);
-}
 
-input {
-  padding: 1rem;
-  border: 1px solid rgb(169, 166, 166);
-  border-radius: 10px;
+#form button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: white;
+  background-color: hsl(0, 79%, 63%);
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s ease;
   position: relative;
 }
+
+#form button:hover {
+  background-color: rgb(198, 194, 194);
+  cursor: pointer;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+
 
 form a {
   align-self: flex-end;
@@ -148,27 +119,6 @@ form a {
 .termsOfUse {
   align-self: flex-start;
   color: rgb(169, 166, 166);
-}
-
-.button {
-  margin-top: -5rem;
-  width: 70%;
-  position: relative;
-}
-
-button {
-  padding: 10px;
-  background-color: hsl(0, 79%, 63%);
-  color: rgb(255, 255, 255);
-  width: 12rem;
-  border-radius: 20px;
-  border: 1px solid;
-  transition: 0.3s ease;
-  position: relative;
-}
-
-button:hover {
-  background-color: rgb(198, 194, 194);
 }
 
 @media screen and (width <= 678px) {
@@ -202,7 +152,17 @@ button:hover {
   label {
     color: white;
   }
-  .signin a{
+  .signin{
+    margin-bottom: 4rem;
+  }
+  .signin a {
     color: gray;
   }
+  .login h1 {
+    align-self: flex-start;
+    margin-bottom: -1.5rem;
+    position: relative;
+    font-size: 1.5rem;
+  }
+
 }
