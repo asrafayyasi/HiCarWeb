@@ -125,6 +125,7 @@ a {
 .input-control {
   display: flex;
   flex-direction: column;
+  
 }
 
 .input-control input {
