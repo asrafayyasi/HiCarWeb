@@ -20,15 +20,15 @@
           <a href="/dashboard/form.html" class="back" aria-label="Profile">
             <ion-icon name="arrow-undo-circle-outline"></ion-icon>
           </a>
-          <h1>Create an account</h1>
-          <p>Already have an account? <a href="/login/loginAdmin.html">Login</a></p>
+          <h1 style="margin-bottom: 50px;">Create an account</h1>
         </div>
 
         <div class="forms">
           <form action="/" id="form">
-            <div class="input-control">
-              <label for="username">Username</label>
-              <input type="text" name="username" id="username" />
+
+                        <div class="input-control">
+              <label for="username">Nama</label>
+              <input type="text" name="Nama" id="Nama" />
               <div class="error"></div>
             </div>
             <div class="input-control">
@@ -37,13 +37,26 @@
               <div class="error"></div>
             </div>
             <div class="input-control">
-              <label for="password">Your password</label>
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="password">Password</label>
+              <input type="Password" name="password" id="password" />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="password">Confirm Password</label>
               <input type="Password" name="password" id="password" />
               <div class="error"></div>
             </div>
             
 
             <div class="termsOfUse">
+              <p style="margin-bottom: 0px;">Already have an account? 
+                <a href="/login/loginAdmin.html">Login</a>
+              </p>
               <p>
                 By creating an account, you aggre to our
                 <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>
