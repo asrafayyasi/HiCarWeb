@@ -620,67 +620,6 @@ margin-bottom: 20px;
 }
 
 
-
-/**
-    * HERO
-    */
-
-.hero {
-    position: relative;
-    min-height: 85vh;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-}
-
-.hero-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 0.8fr;
-}
-
-.input-wrapper:not(:last-of-type) {
-    border-bottom: none;
-    border-right: 1px solid hsla(0, 0%, 0%, 0.08);
-}
-
-.input-label {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.hero-banner {
-    display: block;
-    background: url("../images/hero-banner.jpg") no-repeat;
-    background-size: cover;
-    background-position: left;
-    position: absolute;
-    top: 100px;
-    bottom: 50px;
-    left: 65%;
-    width: 500px;
-    border-radius: 30px;
-    z-index: -1;
-}
-
-
-
-/**
-    * FEATURED CAR
-    */
-
-.featured-car-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
-
-
-/**
-    * GET START
-    */
-
-.get-start-list { grid-template-columns: 1fr 1fr; }
-
-
-
 /**
     * FOOTER
     */
@@ -703,9 +642,6 @@ margin-bottom: 20px;
 }
 
 
-
-
-
 /**
 * responsive for large than 992px screen
 */
@@ -717,25 +653,6 @@ margin-bottom: 20px;
     */
 
 .container { max-width: 960px; }
-
-
-
-/**
-    * HERO
-    */
-
-.hero .container { width: 100%; }
-
-
-
-/**
-    * BLOG
-    */
-
-.blog .has-scrollbar { padding-bottom: 50px; }
-
-.blog .has-scrollbar > li { max-width: 450px; }
-
 
 
 /**
@@ -806,54 +723,12 @@ margin-bottom: 20px;
 
 
 
-/**
-    * HERO
-    */
-
-.hero { min-height: 100vh; }
-
-.hero-banner {
-    left: auto;
-    right: 50px;
-    width: 630px;
-}
-
-.hero-form { max-width: 900px; }
-
-.hero-form .btn {
-    --width: calc(100% - 40px);
-    --height: 50px;
-    margin: 20px;
-    text-transform: uppercase;
-}
-
-
 
 /**
     * FEATURED CAR 
     */
 
 .featured-car-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-
-
-
-/**
-    * GET START
-    */
-
-.get-start-list { grid-template-columns: repeat(4, 1fr); }
-
-
-
-/**
-    * BLOG
-    */
-
-.blog .has-scrollbar > li {
-    max-width: 340px;
-    scroll-snap-align: center;
-}
-
 
 
 /**

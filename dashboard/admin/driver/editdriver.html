@@ -18,15 +18,27 @@
             <div class="card-header">
               <h4>
                 Driver Edit
-                <a href="customers.html" class="btn btn-danger float-end ">BACK</a>
+                <a href="./driver.html" class="btn btn-danger float-end ">BACK</a>
               </h4>
             </div>
             <div class="card-body">
               <form action="code.php" method="POST">
                 <input type="hidden" name="student_id" ? />
 
+                
                 <div class="mb-3">
-                  <label>Driver Name</label>
+                  <label for="">Foto Driver</label>
+                  <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename" class="form-control">
+                    <input type="submit" style="margin-top: 10px;">
+                  </form>
+                </div>
+                <div class="mb-3">
+                  <label>Nama</label>
+                  <input type="text" name="name" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label>Usia</label>
                   <input type="text" name="name" class="form-control" />
                 </div>
                 <div class="mb-3">
